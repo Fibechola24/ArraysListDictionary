@@ -74,7 +74,7 @@ namespace ArraysListDictionary
             */
 
 
-
+            
             //creating a list to hold objects
             List<Student> studentList = new List<Student>();  //list
             Student student1 = new Student("Victor");
@@ -85,7 +85,20 @@ namespace ArraysListDictionary
 
            Student [] students = { new Student("Fox"), new Student("Jamie") };   //add the array to the list
             studentList.AddRange(students);
-            Console.WriteLine(studentList.Count);
+            //searching lists 
+
+            Console.WriteLine($" student 2 is at index {studentList.IndexOf(student2)}");
+
+            //access list by index
+            if (studentList.Contains(student1))
+            {
+                //Console.WriteLine($"{student1} is a student");
+            }
+
+
+
+           
+            Console.ReadLine();
         }
     }
 }
