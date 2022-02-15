@@ -74,7 +74,7 @@ namespace ArraysListDictionary
             */
 
 
-            
+            /*
             //creating a list to hold objects
             List<Student> studentList = new List<Student>();  //list
             Student student1 = new Student("Victor");
@@ -94,10 +94,57 @@ namespace ArraysListDictionary
             {
                 //Console.WriteLine($"{student1} is a student");
             }
+            */
 
 
 
+            //using dictionary
+            /*
+            Dictionary<int, string> importantYears = new Dictionary<int, string>();
            
+            importantYears[1993] = "The year Stella was born";
+
+            Console.WriteLine($"what is the interestiong about the year 1993?");
+            Console.WriteLine(importantYears[1993]);
+            */
+
+            /*
+            Dictionary<string, string> dict = new Dictionary<string, string>();
+            dict.Add("VB","a simple but wordy languange");
+            dict.Add("Java", "god but not like c#");
+            dict.Add("C#", "the best");
+
+            Console.WriteLine($"Does the dictionary contains C#? {dict.ContainsKey("C#")} ");
+            Console.WriteLine();
+
+
+            //iterating through a dictionary contents 
+            Console.WriteLine("Contents of the dictionary");
+            foreach ( KeyValuePair<string, string> pair in dict)
+            {
+                Console.WriteLine($"key: {pair.Key.PadRight(8)} value: {pair.Value}");
+            }
+
+            Console.WriteLine("print only the keys and values"); 
+
+            Dictionary<string, string>.KeyCollection keys = dict.Keys;
+            foreach (string key in keys)
+            {
+                Console.WriteLine($"key: {key}");
+            }
+            Console.WriteLine();
+            Dictionary<string, string>.ValueCollection values = dict.Values;
+            foreach (var value in values)
+            {
+                Console.WriteLine($"value: {value}");
+            }
+            */
+
+
+
+
+
+
             Console.ReadLine();
         }
     }
