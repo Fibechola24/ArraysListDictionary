@@ -75,7 +75,17 @@ namespace ArraysListDictionary
 
 
 
-            Console.ReadLine();
+            //creating a list to hold objects
+            List<Student> studentList = new List<Student>();  //list
+            Student student1 = new Student("Victor");
+            Student student2 = new Student("Stella");
+            studentList.Add(student1);
+            studentList.Add(student2);
+            Console.WriteLine($"Number in student list is {studentList.Count}");
+
+           Student [] students = { new Student("Fox"), new Student("Jamie") };   //add the array to the list
+            studentList.AddRange(students);
+            Console.WriteLine(studentList.Count);
         }
     }
 }
