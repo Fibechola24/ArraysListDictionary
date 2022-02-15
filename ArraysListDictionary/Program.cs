@@ -142,7 +142,7 @@ namespace ArraysListDictionary
 
 
             /*task: create a dictionary list of employeee ids and the name that goes with that ID,. fill it with a few records. 
-             * ask the user for their id and return their name */
+             * ask the user for their id and return their name 
 
               Dictionary<int, string> employees = new Dictionary<int, string>();
             employees.Add(01, "Johnshon Johnson");
@@ -162,7 +162,18 @@ namespace ArraysListDictionary
                 continueResult = Console.ReadLine();
 
             } while (continueResult.ToLower() == "yes");
-          
+          */
+
+
+            //use hashset to create a set of numbers or contents that are not repeated and unorderred
+
+            HashSet<int> primeNumbers = new HashSet<int>();
+            primeNumbers.Add(1);
+            primeNumbers.Add(2);
+
+            //or
+
+            HashSet<string> oddNumbers = new HashSet<string> {"John", "John", "Victor","Stella" };
 
 
 
