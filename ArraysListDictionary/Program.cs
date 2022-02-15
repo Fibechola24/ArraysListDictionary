@@ -10,6 +10,13 @@ namespace ArraysListDictionary
     {
         static void Main(string[] args)
         {
+            string [] firstNames = new string[2];
+            firstNames[0] = "Victor";
+            firstNames[1] = "Oluwaseun";
+            Console.WriteLine($"Welcome {firstNames[0]} and {firstNames[1]}");
+
+
+            Console.ReadLine();
         }
     }
 }
