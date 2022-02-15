@@ -141,6 +141,28 @@ namespace ArraysListDictionary
             */
 
 
+            /*task: create a dictionary list of employeee ids and the name that goes with that ID,. fill it with a few records. 
+             * ask the user for their id and return their name */
+
+              Dictionary<int, string> employees = new Dictionary<int, string>();
+            employees.Add(01, "Johnshon Johnson");
+            employees.Add(02, "Stella Seun");
+            employees.Add(007, "Emmanuel Afolyan");
+            string continueResult;
+            do
+            {
+
+                Console.Write("please enter your ID number: ");
+                string idInput = Console.ReadLine();
+
+                int id = Convert.ToInt32(idInput);
+
+                Console.WriteLine($"The name of the employee is {employees[id]}");
+                Console.Write("Do you want to try again? Enter Yes or no");
+                continueResult = Console.ReadLine();
+
+            } while (continueResult.ToLower() == "yes");
+          
 
 
 
